@@ -43,16 +43,17 @@ btn.addEventListener("click",()=>{
 function takeCommand(message){
    voice.style.display="none"
     btn.style.display="flex"
-    if(message.includes("hello")||message.includes("hey")){
+    if(message.includes("hello")||message.includes("hey")||message.includes("hi")){
         speak("hello sir,what can i help you?")
     }
+   
     else if(message.includes("who are you")){
         speak("i am virtual assistant ,created by sathvik")
     }
     else if(message.includes("how are you")){
         speak("i am fine sir, how are you , hope you doing well")
     }
-    else if(message.includes("what is your nam")){
+    else if(message.includes("what is your name")){
         speak("i am Alex , iam virtual assistant")
     }
     else if(message.includes("open youtube")){
@@ -88,8 +89,8 @@ function takeCommand(message){
         speak(date)
       }
     else{
-        let finalText="this is what i found on internet regarding" + message.replace("shipra","") || message.replace("shifra","")
+        let finalText="this is what i found on internet regarding" + message.replace("alex","") || message.replace("alex","")
         speak(finalText)
-        window.open(`https://www.google.com/search?q=${message.replace("shipra","")}`,"_blank")
+        window.open(`https://www.google.com/search?q=${message.replace("alex","")}`,"_blank")
     }
 }

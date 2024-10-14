@@ -54,3 +54,46 @@ cursor: pointer;
     box-shadow: 2px 2px 20px rgb(21, 145, 207),2px 2px 20px rgb(201, 41, 116);
     letter-spacing: 2px;
 }
+@media (max-width: 1024px) {
+    #logo {
+        width: 30vw; /* Adjust logo size for tablets */
+    }
+    #btn {
+        width: 70%; /* Make button wider on tablets */
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+}
+@media (max-width: 768px) {
+    #logo {
+        width: 40vw; /* Adjust logo size for smaller screens */
+    }
+    #btn {
+        width: 80%; /* Make button wider on smaller screens */
+        font-size: 18px; /* Slightly reduce font size */
+    }
+    #name, #va {
+        font-size: 35px; /* Reduce font size for smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    #logo {
+        width: 50vw; /* Further adjust logo size for very small screens */
+    }
+    #name, #va {
+        font-size: 28px; /* Further reduce font size for very small screens */
+    }
+    #btn {
+        font-size: 16px; /* Further reduce button font size */
+    }
+}
+@media (max-width: 350px) {
+    #logo {
+        width: 60vw; /* Further adjust logo size for extremely small screens */
+    }
+    #name, #va {
+        font-size: 24px; /* Further reduce font size for extremely small screens */
+    }
+    #btn {
+        font-size: 14px; /* Further reduce button font size */
+    }
+}
