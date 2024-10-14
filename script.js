@@ -48,7 +48,7 @@ function takeCommand(message){
     }
    
     else if(message.includes("who are you")){
-        speak("i am virtual assistant ,created by sathvik")
+        speak("i am Alex, a virtual assistant ,created by sathvik")
     }
     else if(message.includes("how are you")){
         speak("i am fine sir, how are you , hope you doing well")
